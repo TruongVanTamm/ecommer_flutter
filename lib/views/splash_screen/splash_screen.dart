@@ -13,7 +13,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   changeScreen() {
-    Future.delayed(const Duration(seconds: 30), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Get.to(() => const LoginScreen());
     });
   }
@@ -27,26 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: redColor,
-      body: Center(
-          child: Column(
-        children: <Widget>[
-          Align(
-              alignment: Alignment.topLeft,
-              child: Image.asset(icSplashBg, width: 200)),
-          20.heightBox,
-          applogoWidget(),
-          10.heightBox,
-          appname.text.fontFamily(bold).size(22).make(),
-          5.heightBox,
-          appversion.text.size(14).make(),
-          const Spacer(),
-          credits.text.fontFamily(semibold).make(),
-          // Text(credits,
-          //     style: TextStyle(color: Colors.white, fontFamily: semibold))
-          30.heightBox,
-        ],
-      )),
+      backgroundColor: greenColor,
+      body: Center(child: applogoWidget(logo: icAppLogoWhite)),
     );
   }
 }

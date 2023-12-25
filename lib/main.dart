@@ -15,14 +15,14 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: appname,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
         fontFamily: regular,
         textTheme: const TextTheme(
           bodyLarge: TextStyle(),
           bodyMedium: TextStyle(),
         ).apply(
-          bodyColor: Colors.white,
+          bodyColor: Colors.black,
           displayColor: Colors.blue,
         ),
       ),
